@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brand Assets</title>
 
@@ -12,14 +11,14 @@
 
 <body>
 
-    <header class="header">
+    <div class="header">
         <h1>School Logo & Branding</h1>
         <p>Download our school logo and brand materials.</p>
-    </header>
+    </div>
 
-    <main class="main-content">
-        <div class="logo-row">
-            <div class="logo-box">
+    <main class="cards">
+        <div class="logo-cards">
+            <div class="logo-card">
                 <h2>Transparent Background</h2>
                 <img src="ohs_emblem_transpernt_background.svg" alt="Transparent Logo" class="logo-img" />
                 <button onclick="downloadImage('ohs_emblem_transpernt_background.svg')" class="btn">SVG </button>
@@ -28,51 +27,44 @@
                 <button onclick="downloadImage('ohs_emblem_transpernt_background.png')" class="btn">PNG High Res</button>
                 <button onclick="downloadImage('ohs_emblem_transpernt_background_ultra-high.png')" class="btn">PNG Ultra High Res</button>
             </div>
-            <div class="logo-box">
+            <div class="logo-card">
                 <h2>White Background</h2>
                 <img src="ohs_emblem_white_background.svg" alt="White Background Logo" class="logo-img" />
                 <button onclick="downloadImage('ohs_emblem_mono.svg')" class="btn">SVG</button>
                 <button onclick="downloadImage('ohs_emblem_transpernt_background.png')" class="btn">PNG Medium Res</button>
                 <button onclick="downloadImage('ohs_emblem_transpernt_background.png')" class="btn">PNG Ultra High Res</button>
             </div>
-            <div class="logo-box">
+            <div class="logo-card">
                 <h2>Mono (Black/White)</h2>
                 <img src="ohs_emblem_mono.svg" alt="Mono Logo" class="logo-img" />
                 <button onclick="downloadImage('ohs_emblem_mono.svg')" class="btn">SVG</button>
                 <button onclick="downloadImage('ohs_emblem_transpernt_background.png')" class="btn">PNG Medium Res</button>
                 <button onclick="downloadImage('ohs_emblem_transpernt_background.png')" class="btn">PNG Ultra High Res</button>
             </div>
-        </div>
+        </div> 
+
+        <div class="colour-cards"> <!--find a better way to fit this in the existing code while still being the same distance from sides-->
+            <h2>Brand Colours </h2>
+            <div class="brand-colours-grid">
+                <div class="brand-colour-box">
+                    <div class="brand-colour-swatch" style="background: #06854d;"></div>
+                    <div class="brand-colour-label">Green<br><span>#06854d</span></div>
+                </div>
+                <div class="brand-colour-box">
+                    <div class="brand-colour-swatch" style="background: #ec1c24;"></div>
+                    <div class="brand-colour-label">Red<br><span>#ec1c24</span></div>
+                </div>
+                <div class="brand-colour-box">
+                    <div class="brand-colour-swatch" style="background: #ffffff; border: 1px solid #e5e7eb;"></div>
+                    <div class="brand-colour-label">White<br><span>#ffffff</span></div>
+                </div>
+            </div>
+        </section>
+
+            Copyright notice
+        These images are part of the school branding and are to be used internally in accordance with school policies.
+        They are not to be used for commercial purposes or modified in any way without prior permission from the school.
 
     </main>
-
-    <section class="logo-box">
-        <h2>Brand Colours</h2>
-        <div class="brand-colours-grid">
-            <div class="brand-colour-box">
-                <div class="brand-colour-swatch" style="background: #06854d;"></div>
-                <div class="brand-colour-label">Green<br><span>#06854d</span></div>
-            </div>
-            <div class="brand-colour-box">
-                <div class="brand-colour-swatch" style="background: #ec1c24;"></div>
-                <div class="brand-colour-label">Red<br><span>#ec1c24</span></div>
-            </div>
-            <div class="brand-colour-box">
-                <div class="brand-colour-swatch" style="background: #ffffff; border: 1px solid #e5e7eb;"></div>
-                <div class="brand-colour-label">White<br><span>#ffffff</span></div>
-            </div>
-        </div>
-    </section>
-
-        copyright notice
-        License Notice
-        This document is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License⤴
-
-        You are free to share this material for study and educational purposes, provided that:
-        You give appropriate credit to the author.
-        You do not use it for commercial purposes.
-        You do not modify or create derivative works from it.
-
-
 </body>
 </html>
